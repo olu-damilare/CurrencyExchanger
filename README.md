@@ -2,6 +2,10 @@
 
 This is a springboot web app that generates the latest exchange rate for over 150 currencies. Currencies are represented as their standard format in three letters like USD, NGN.
 
+## End point
+https://currency-rate-exchanger.herokuapp.com/exchange-rate/
+
+
 ## Request
 
 HTTP method = POST
