@@ -37,4 +37,7 @@ Response type = application/json
 OK - 200
 BAD REQUEST = 400
 
-In an instance where you get a 400 status code, ensure the currency representation is valid.g
+In an instance where you get a 400 status code, ensure the currency representation is valid.
+
+## Author
+[@olu-damilare](https://github.com/olu-damilare)
