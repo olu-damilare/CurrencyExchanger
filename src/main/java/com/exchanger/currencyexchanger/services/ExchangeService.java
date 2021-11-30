@@ -26,12 +26,16 @@ public class ExchangeService {
 
         String baseCurrency = exchangeRequestDto.getCurrency1().toUpperCase();
 
-        String url = "https://freecurrencyapi.net/api/v2/latest?apikey=" + apiKey + "&base_currency=" + baseCurrency;
-        ApiResponseDto response = restTemplate.getForObject(url, ApiResponseDto.class);
+        ApiResponseDto response = null;
 
-        if(response == null){
+        try {
+            String url = "https://freecurrencyapi.net/api/v2/latest?apikey=" + apiKey + "&base_currency=" + baseCurrency;
+            response = restTemplate.getForObject(url, ApiResponseDto.class);
+        }catch(Exception e){
             throw new IllegalArgumentException("Currency 1 is invalid");
+
         }
+
 
         Double rate = response.getData().get(exchangeRequestDto.getCurrency2().toUpperCase());
 
