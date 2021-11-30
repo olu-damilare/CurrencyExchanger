@@ -35,6 +35,7 @@ Response type = application/json
 ## Error codes
 
 OK - 200
+
 BAD REQUEST = 400
 
 In an instance where you get a 400 status code, ensure the currency representation is valid.
