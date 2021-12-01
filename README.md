@@ -6,7 +6,7 @@ This is a springboot web app that generates the latest exchange rate for over 15
 https://currency-rate-exchanger.herokuapp.com/exchange-rate/
 
 
-## Request
+## Request body
 
 HTTP method = POST
 
